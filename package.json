@@ -25,6 +25,18 @@
   },
   "engines": {
     "node": ">=14.x"
-  }
+  },
+  "description": "## Índice",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carolina2118/SCL020-data-lovers.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Carolina2118/SCL020-data-lovers/issues"
+  },
+  "homepage": "https://github.com/Carolina2118/SCL020-data-lovers#readme"
 }
-
