@@ -1,14 +1,10 @@
-body {
-    background-image: url(fondo.jpg);
-}
-
 header {
     overflow: hidden;
     /* Eliminamos errores de float */
-    background-image: url(Rick-and-Morty.png);
+    background-image: url(/src/data/rickandmorty/image/Rick-and-Morty.png);
     background-size: 100% 100%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 header nav {
