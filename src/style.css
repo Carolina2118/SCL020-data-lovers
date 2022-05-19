@@ -1,13 +1,63 @@
-header {
-    overflow: hidden;
-    /* Eliminamos errores de float */
-    background-image: url(/src/data/rickandmorty/image/Rick-and-Morty.png);
-    background-size: 100% 100%;
-    margin-left: 10%;
-    margin-right: 10%;
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    /*el relleno y el borde estan incluidosen el ancho y alto de los elementos*/
 }
 
-header nav {
-    float: right;
-    line-height: 100px;
+body {
+    background-image: url(/src/data/rickandmorty/image/fondo.jpg);
+    background-repeat: no-repeat;
+}
+
+header {
+    /*contenedor*/
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.nav {
+    /*fila */
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.ul {
+    /*columnas*/
+    width: 100%;
+}
+
+.personaje {
+    float: left;
+    /* flota a la derecha */
+    width: 25%;
+    border: 1px solid blue;
+}
+
+.genero {
+    float: left;
+    /*flota a la derecha */
+    width: 25%;
+    border: 1px solid blue;
+}
+
+.especie {
+    float: left;
+    /*flota a la derecha */
+    width: 25%;
+    border: 1px solid blue;
+}
+
+.episodios {
+    float: left;
+    /*flota a la derecha */
+    width: 25%;
+    border: 1px solid blue;
 }
