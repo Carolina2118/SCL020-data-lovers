@@ -22,42 +22,89 @@ header {
 }
 
 .nav {
-    /*fila */
+    /*fila  = pie de */
     position: relative;
     margin: auto;
-    width: 100%;
+    padding: 100px;
     height: auto;
 }
 
 .ul {
-    /*columnas*/
+    /* serian 12 columnas que cubren el 100 % */
     width: 100%;
 }
 
-.personaje {
+[ class*="Nav-"] {
+    background-color: chocolate;
+    /*1,2,3 y 4 cajas de las 12 columnas*/
     float: left;
     /* flota a la derecha */
-    width: 25%;
-    border: 1px solid blue;
+    padding: 50px;
+}
+
+.personaje {
+    /*multiplica cantidad de cajas x 100 y el total de las cajas que son 12 */
+    width: 33.33333333%;
 }
 
 .genero {
-    float: left;
-    /*flota a la derecha */
-    width: 25%;
-    border: 1px solid blue;
+    width: 33.33333333%;
 }
 
 .especie {
-    float: left;
-    /*flota a la derecha */
-    width: 25%;
-    border: 1px solid blue;
+    width: 33.33333333%;
 }
 
 .episodios {
+    width: 33.33333333%;
+}
+
+.Rick-Sanchez {
+    background-color: rgb(204, 210, 30);
+    /*1,2,3 y 4 cajas de las 12 columnas*/
     float: left;
-    /*flota a la derecha */
-    width: 25%;
-    border: 1px solid blue;
+    /* flota a la derecha */
+    border: 15px solid blue;
+    padding: 15px;
+    padding-bottom: 155px;
+}
+
+.Morty-Smith {
+    background-color: rgb(30, 174, 210);
+    /*1 cajas de las 12 columnas*/
+    float: left;
+    /* flota a la derecha */
+    border: 15px solid rgb(209, 209, 216);
+    padding: 25px;
+    padding-bottom: 155px;
+}
+
+.Summer-Smith {
+    background-color: rgb(210, 30, 75);
+    /*2 cajas de las 12 columnas*/
+    float: left;
+    /* flota a la derecha */
+    border: 15px solid rgb(244, 244, 252);
+    padding: 25px;
+    padding-bottom: 155px;
+}
+
+.Beth-Smith {
+    background-color: rgb(6, 110, 25);
+    /*3 cajas de las 12 columnas*/
+    float: left;
+    /* flota a la derecha */
+    border: 15px solid rgb(204, 204, 210);
+    padding: 25px;
+    padding-bottom: 155px;
+}
+
+.Jerry-Smith {
+    background-color: rgb(25, 3, 123);
+    /*4 cajas de las 12 columnas*/
+    float: left;
+    /* flota a la derecha */
+    border: 15px solid rgb(240, 240, 244);
+    padding: 25px;
+    padding-bottom: 155px;
 }
