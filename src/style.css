@@ -1,105 +1,101 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
     box-sizing: border-box;
-    /*el relleno y el borde estan incluidosen el ancho y alto de los elementos*/
 }
 
 body {
-    background-image: url(/src/data/rickandmorty/image/fondo.jpg);
-    background-repeat: no-repeat;
+    background-image: url(fondo.jpg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 90px 20px 0;
 }
 
-header {
-    /*contenedor*/
-    position: relative;
-    margin: auto;
+.header {
+    background-color: rgb(93, 211, 121);
+    height: 80px;
+    position: fixed;
+    /*fijo posicion de la barra*/
     width: 100%;
-    height: auto;
+    /*ancho 100 %*/
+    top: 0;
+    left: 0;
 }
+
+
+/*barra de navegacion*/
 
 .nav {
-    /*fila  = pie de */
-    position: relative;
-    margin: auto;
-    padding: 100px;
-    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /*los navegadores quedan alejados del logo*/
+    max-width: 992px;
+    /*para navegador es grande ,el logo se acomode */
+    margin: o auto;
+    /* para centrar ,arriba y abajo o y izquierda y derecha  */
 }
 
-[ class*="Nav-"] {
-    background-color: chocolate;
-    /*1,2,3 y 4 cajas de las 12 columnas*/
-    float: left;
-    /* flota a la derecha */
-    padding: 50px;
+.nav-link {
+    color: rgb(16, 69, 17);
+    text-decoration: none;
 }
 
-.personaje {
-    /*multiplica cantidad de cajas x 100 y el total de las cajas que son 12 */
-    width: 33.33333333%;
+.main {
+    color: rgb(37, 119, 35);
 }
 
-.genero {
-    width: 33.33333333%;
+.logo {
+    /* se trabaja el logo se acomoda
+    para que quede sentrado */
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
 }
 
-.especie {
-    width: 33.33333333%;
+.nav-buton {
+    color: rgb(16, 69, 17);
+    background: none;
+    /*no color */
+    border: none;
+    /*elimino el borde*/
+    font-size: 30px;
+    /*tamaño a las barras*/
+    padding: 0 20px;
+    line-height: 60px;
+    /*en modo navegador cambia de tamaño*/
+    display: none;
+    /* para que no se vea en dispositivo escritoro*/
 }
 
-.episodios {
-    width: 33.33333333%;
+.nav-menu {
+    /*se ajustan los nav en linea */
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    list-style: 40px;
 }
 
-.Rick-Sanchez {
-    background-color: rgb(204, 210, 30);
-    /*1,2,3 y 4 cajas de las 12 columnas*/
-    float: left;
-    /* flota a la derecha */
-    border: 15px solid blue;
-    padding: 15px;
-    padding-bottom: 155px;
+.nav-menu-item {
+    /*se separan  cada navegador*/
+    font-size: 18px;
+    margin: 0 10px;
+    /*se separan */
+    line-height: 80px;
+    /*se sentro a la misma altura que el logo*/
+    text-transform: uppercase;
+    width: max-content;
 }
 
-.Morty-Smith {
-    background-color: rgb(30, 174, 210);
-    /*1 cajas de las 12 columnas*/
-    float: left;
-    /* flota a la derecha */
-    border: 15px solid rgb(209, 209, 216);
-    padding: 25px;
-    padding-bottom: 155px;
+.nav-menu-link {
+    /*se ajusto los  bordes y el percusor */
+    padding: 8px 12px;
+    border-radius: 3px;
 }
 
-.Summer-Smith {
-    background-color: rgb(210, 30, 75);
-    /*2 cajas de las 12 columnas*/
-    float: left;
-    /* flota a la derecha */
-    border: 15px solid rgb(244, 244, 252);
-    padding: 25px;
-    padding-bottom: 155px;
+.nav-menu-link:hover {
+    /* background-color: aquamarine */
+    background-color: #4c4c4c7c;
+    transition: 0.5s;
 }
 
-.Beth-Smith {
-    background-color: rgb(6, 110, 25);
-    /*3 cajas de las 12 columnas*/
-    float: left;
-    /* flota a la derecha */
-    border: 15px solid rgb(204, 204, 210);
-    padding: 25px;
-    padding-bottom: 155px;
-}
 
-.Jerry-Smith {
-    background-color: rgb(25, 3, 123);
-    /*4 cajas de las 12 columnas*/
-    float: left;
-    /* flota a la derecha */
-    border: 15px solid rgb(240, 240, 244);
-    padding: 25px;
-    padding-bottom: 155px;
-}
+/*se modifica diceño dispocitivo movil*/
