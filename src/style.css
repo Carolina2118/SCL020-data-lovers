@@ -29,11 +29,6 @@ header {
     height: auto;
 }
 
-.ul {
-    /* serian 12 columnas que cubren el 100 % */
-    width: 100%;
-}
-
 [ class*="Nav-"] {
     background-color: chocolate;
     /*1,2,3 y 4 cajas de las 12 columnas*/
