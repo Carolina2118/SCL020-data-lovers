@@ -4,13 +4,13 @@
 }
 
 body {
-    background-image: url(fondo.jpg);
+    background-image: url(/src/data/rickandmorty/image/fondo.jpg);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 90px 20px 0;
 }
 
 .header {
-    background-color: rgb(93, 211, 121);
+    background-color: rgba(93, 211, 121, 0.459);
     height: 80px;
     position: fixed;
     /*fijo posicion de la barra*/
@@ -64,6 +64,7 @@ body {
     /*en modo navegador cambia de tamaño*/
     display: none;
     /* para que no se vea en dispositivo escritoro*/
+    cursor: pointer;
 }
 
 .nav-menu {
@@ -99,3 +100,66 @@ body {
 
 
 /*se modifica diceño dispocitivo movil*/
+
+@media (max-width:768px)
+/*si el dispositivo tenga menos de -- se le aplica */
+
+{
+    body {
+        background-color: blueviolet;
+        padding-top: 0 70px;
+    }
+    .header {
+        /*modifica en ancho del navegador*/
+        height: 60px;
+    }
+    .logo {
+        /* se trabaja el logo se acomoda
+        para que quede sentrado */
+        font-size: 25px;
+        font-weight: bold;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .nav-menu {
+        /*se ajustan los nav en linea */
+        flex-direction: column;
+        align-items: center;
+        /*centrando letras del navegador */
+        margin-right: 20px;
+        background-color: #438d5f;
+        position: fixed;
+        /*posiciona segun el movimiento de la ventana */
+        left: 0;
+        top: 60px;
+        /*sera el tope del elemneto del navegador*/
+        width: 100%;
+        /*ancho de la barra */
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        /*toma todo el espacio */
+        overflow-y: auto;
+        left: 100%;
+        /*se corre a la derecha */
+        transition: left 0.3s;
+    }
+    .nav-menu-item {
+        line-height: 70px;
+    }
+    .nav-menu-link {
+        /*se ajusto los  bordes y el percusor */
+        padding: 8px 12px;
+        border-radius: 3px;
+    }
+    .nav-menu-link:hover {
+        /* background-color: aquamarine */
+        background: none;
+        color: aliceblue;
+    }
+    .nav-buton {
+        display: block;
+    }
+    .nav-menu_visible {
+        left: 0;
+    }
+}
