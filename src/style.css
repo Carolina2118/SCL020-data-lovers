@@ -15,6 +15,37 @@ body {
     padding: 90px 20px 0;
 }
 
+.buscador {
+    position: relative;
+    margin-top: 29px;
+}
+
+.buscador input {
+    padding: 0 15px;
+    font-size: 18px;
+    color: #000000;
+    outline: none;
+    border: 1px solid rgba(16, 90, 26, 0.911);
+    border-radius: 10px;
+    background-color: #61a342af;
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 25px;
+    text-align: center;
+    color: rgb(6, 6, 6);
+}
+
+ ::placeholder {
+    padding: 100px;
+    color: black;
+}
+
 .header {
     background-color: rgba(93, 211, 121, 0.459);
     height: 80px;
@@ -45,7 +76,7 @@ body {
 }
 
 .main {
-    color: rgb(37, 119, 35);
+    color: rgb(203, 233, 200);
 }
 
 .logo {
@@ -168,5 +199,14 @@ body {
     }
     .nav-menu_visible {
         left: 0;
+    }
+    .buscardor {
+        position: absolute;
+        padding: 5px;
+    }
+    .buscardor input {
+        margin-top: 29px;
+        width: 240px;
+        padding: 40px;
     }
 }
