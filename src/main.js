@@ -1,6 +1,14 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import { filterDatos, rick } from './data.js';
+import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(example, data);
+let rickDatos = data.results;
+console.log(rickDatos);
+
+
+const personajesName = document.getElementById("personajes");
+personajesName.addEventListener("click", function(e) {
+    // e.preventDefault();
+    console.log("hola");
+
+    rick(rickDatos);
+});

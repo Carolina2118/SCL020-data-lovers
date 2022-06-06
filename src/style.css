@@ -25,9 +25,9 @@ body {
     font-size: 18px;
     color: #000000;
     outline: none;
-    border: 1px solid rgba(16, 90, 26, 0.911);
+    border: 1px solid rgba(76, 127, 83, 0.911);
     border-radius: 10px;
-    background-color: #61a342af;
+    background-color: #7c8876af;
 }
 
 .btn {
@@ -47,7 +47,7 @@ body {
 }
 
 .header {
-    background-color: rgba(93, 211, 121, 0.459);
+    background-color: rgba(108, 211, 132, 0.459);
     height: 80px;
     position: fixed;
     /*fijo posicion de la barra*/
@@ -71,12 +71,12 @@ body {
 }
 
 .nav-link {
-    color: rgb(16, 69, 17);
+    color: rgb(13, 19, 13);
     text-decoration: none;
 }
 
 .main {
-    color: rgb(203, 233, 200);
+    color: rgb(184, 190, 183);
 }
 
 .logo {
@@ -107,7 +107,7 @@ body {
 .nav-menu {
     /*se ajustan los nav en linea */
     display: flex;
-    margin-right: 40px;
+    margin-right: 400px;
     list-style: none;
     list-style: 40px;
 }
@@ -120,6 +120,7 @@ body {
     line-height: 80px;
     /*se sentro a la misma altura que el logo*/
     text-transform: uppercase;
+    left: 10px;
 }
 
 .nav-menu-link {
@@ -165,7 +166,7 @@ body {
         align-items: center;
         /*centrando letras del navegador */
         margin-right: 20px;
-        background-color: #438d5f;
+        background-color: #156530;
         position: fixed;
         /*posiciona segun el movimiento de la ventana */
         left: 0;
