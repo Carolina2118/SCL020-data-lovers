@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+.personaje {
+    color: rgb(181, 211, 211);
+}
+
 body {
     background-image: url(/src/data/rickandmorty/image/fondo.jpg);
     background-repeat: no-repeat;
