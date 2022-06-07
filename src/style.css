@@ -4,7 +4,11 @@
 }
 
 .personaje {
-    color: rgb(181, 211, 211);
+    color: rgb(36, 7, 202);
+}
+
+.genero {
+    color: #156530;
 }
 
 body {
