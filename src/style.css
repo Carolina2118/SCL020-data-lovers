@@ -3,16 +3,27 @@
     box-sizing: border-box;
 }
 
-.personaje {
-    color: rgb(36, 7, 202);
+.container {
+    background: rgb(251, 251, 251);
+    /*color al fondo*/
+    display: flex;
+    /*orden de los elementos*/
+    align-content: center;
 }
 
-.genero {
-    color: #156530;
+.personaje {
+    background: #777;
+    height: 40px;
+    color: rgb(36, 7, 202);
+    padding: 70px 30px;
+}
+
+.male:hover {
+    background-color: rgb(13, 132, 237);
 }
 
 body {
-    background-image: url(/src/data/rickandmorty/image/fondo.jpg);
+    background-image: url(/src/data/rickandmorty/image/mortyAtacado.jpg);
     background-repeat: no-repeat;
     min-height: 100vh;
     background-position: center center;
@@ -21,7 +32,14 @@ body {
     background-size: 100% 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 90px 20px 0;
+    display: flex;
 }
+
+
+/*.main {
+    color: rgb(1, 3, 1);
+    font-size: 25px;
+}*/
 
 .buscador {
     position: relative;
@@ -47,11 +65,6 @@ body {
     line-height: 25px;
     text-align: center;
     color: rgb(6, 6, 6);
-}
-
- ::placeholder {
-    padding: 100px;
-    color: black;
 }
 
 .header {
@@ -81,10 +94,6 @@ body {
 .nav-link {
     color: rgb(13, 19, 13);
     text-decoration: none;
-}
-
-.main {
-    color: rgb(184, 190, 183);
 }
 
 .logo {
@@ -121,6 +130,9 @@ body {
 }
 
 .nav-menu-item {
+    background: #236e3c00;
+    border-color: rgba(9, 255, 0, 0);
+    font-size: 20px;
     /*se separan  cada navegador*/
     font-size: 18px;
     margin: 0 10px;

@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--viewpor= ventana de visualisacion //// width= device-width,sigue el ancho de la pagina en un dispocitivo -->
     <script src="https://kit.fontawesome.com/e723dcbc95.js" crossorigin="anonymous"></script>
-    <script defer src="butoon.js"></script>
     </body>
 </head>
 
@@ -22,39 +21,51 @@
         <!--Menu del navegador-->
         <nav class="nav" id="filtrer">
             <a href="#" class="logo nav-link">logo</a>
-            <button class="nav-buton">
+            <button class="nav-buton" id="nav-buton">
                 <i class="fa-solid fa-bars"></i>
-                    </button>
+            </button>
 
-            <ul class="nav-menu ">
+            <ul class="nav-menu" id="nav-menu">
 
                 <li class="nav-menu-item" id="personajes">
                     <a href="#" class="nav-menu-link nav-link">Personajes</a></li>
-                <li class="nav-menu-item" id="genero">
-                    <a href="#" class="nav-menu-link nav-link">Genero</a></li>
-                <li class="nav-menu-item" id="especie">
-                    <a href="#" class="nav-menu-link nav-link">Especie</a></li>
-                <li class="nav-menu-item" id="episodio">
-                    <a href="#" class="nav-menu-link nav-link">Episodio</a></li>
+
+
+                <select class=" nav-menu-item" id="genero">
+                        <option  selected>Genero</option>
+                        <option class="hombre"  value="Male">Hombre</option> 
+                        <option  class="mujer" value="Female">Mujer</option> 
+                    </select>
+
+
+                <select class="nav-menu-item" id="especie">
+                        <option class="nav-menu-link nav-link">Especie</option>
+                        <option value=""></option>
+                </select>
+
+                <select class="nav-menu-item" id="episodio">
+                    <option class="nav-menu-link nav-link">Episodio</option>
+                </select>
 
                 <div class="buscador" id="buscardo">
                     <input type="text" placeholder="Buscador" required>
+
                     <div class="btn">
                         <i class="fa-solid fa-magnifying-glass"></i>
-
                     </div>
+
                 </div>
 
             </ul>
         </nav>
 
     </header>
-    <main class=" main"> "Rick y Morty" es el ejemplo más claro y es de los trabajos más reconocidos por abordar temas cotidianos y existencialistas con niveles de burla superiores a los de cualquier otra obra. Hemos mencionado que es la serie que mejor ha lidiado con el
+    <!-- <main class=" main"> "Rick y Morty" es el ejemplo más claro y es de los trabajos más reconocidos por abordar temas cotidianos y existencialistas con niveles de burla superiores a los de cualquier otra obra. Hemos mencionado que es la serie que mejor ha lidiado con el
         anarquismo narrativo que exige esta época moderna.</main>
+    -->
 
-
+    <!-- <script defer src="butoon.js"></script>-->
     <script src="main.js" type="module"></script>
-    <!-- <script src="butoon.js"></script>-->
 </body>
 
 </html>

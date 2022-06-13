@@ -1,8 +1,10 @@
-import { filterDatos, recorregenero } from './data.js';
+import { recorregenero } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 let rickDatos = data.results;
-console.log(rickDatos);
+//console.log(rickDatos);
+
+
 /*Diseño del afiche e imagen */
 const mostrarPersonajes = (personajes) => {
     personajes.forEach(e => {
@@ -10,10 +12,12 @@ const mostrarPersonajes = (personajes) => {
         let geMaleFemal = e.gender
         let imagen = e.image
         document.getElementById("root").innerHTML += `
-   <h1 class="personaje">Personaje:${perName}</h1>
-   <h2 class ="genero">Genero:${geMaleFemal}</h2>
-   <img src ="${imagen}">
-     `
+        <div class ="container">
+            <img class ="imagen" src ="${imagen}">
+            <div class="personaje">Personaje:${perName}</div>
+            <div class ="genero">Genero:${geMaleFemal}</div>
+            </div>
+            `
     })
 }
 
@@ -21,14 +25,22 @@ const mostrarPersonajes = (personajes) => {
 
 /*la funciond el click en personaje*/
 /****** funciona! *****/
+
 const personajesName = document.getElementById("personajes");
 personajesName.addEventListener("click", function() {
-    //recorrePersonaje(rickDatos);
+    document.getElementById("root").innerHTML = ""
+
     mostrarPersonajes(rickDatos);
 });
+/*se obtuvo el valor del selector */
 const generoMaleFemal = document.getElementById("genero");
-generoMaleFemal.addEventListener("click", function(e) {
 
+generoMaleFemal.addEventListener("change", function() {
+    document.getElementById("root").innerHTML = ""
 
-    // mostrarPersonajes(rickDatos);
+    let selecoption = generoMaleFemal.options[generoMaleFemal.selectedIndex].value;
+    let restungener = recorregenero(rickDatos, selecoption);
+    mostrarPersonajes(restungener);
+    console.log(restungener);
+
 });
