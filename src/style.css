@@ -4,7 +4,7 @@
 }
 
 .container {
-    background: rgb(210, 103, 187);
+    background: rgba(165, 9, 131, 0.467);
     /*color al fondo*/
     display: flex;
     /*orden de los elementos*/
@@ -19,7 +19,7 @@
 }
 
 body {
-    background-image: url(/src/data/rickandmorty/image/mortyAtacado.jpg);
+    background-image: url(mortyAtacado.jpg);
     background-repeat: no-repeat;
     min-height: 100vh;
     background-position: center center;
