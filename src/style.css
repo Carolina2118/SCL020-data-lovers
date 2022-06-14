@@ -4,7 +4,7 @@
 }
 
 .container {
-    background: rgb(251, 251, 251);
+    background: rgb(210, 103, 187);
     /*color al fondo*/
     display: flex;
     /*orden de los elementos*/
@@ -16,10 +16,6 @@
     height: 40px;
     color: rgb(36, 7, 202);
     padding: 70px 30px;
-}
-
-.male:hover {
-    background-color: rgb(13, 132, 237);
 }
 
 body {
@@ -83,6 +79,8 @@ body {
 
 .nav {
     display: flex;
+    color: #000000;
+    text-decoration: none;
     justify-content: space-between;
     /*los navegadores quedan alejados del logo*/
     max-width: 1000px;
@@ -91,14 +89,11 @@ body {
     /* para centrar ,arriba y abajo o y izquierda y derecha  */
 }
 
-.nav-link {
-    color: rgb(13, 19, 13);
-    text-decoration: none;
-}
-
 .logo {
     /* se trabaja el logo se acomoda
     para que quede sentrado */
+    color: rgb(13, 19, 13);
+    text-decoration: none;
     font-size: 30px;
     font-weight: bold;
     padding: 0 40px;
@@ -126,13 +121,11 @@ body {
     display: flex;
     margin-right: 400px;
     list-style: none;
-    list-style: 40px;
 }
 
 .nav-menu-item {
     background: #236e3c00;
     border-color: rgba(9, 255, 0, 0);
-    font-size: 20px;
     /*se separan  cada navegador*/
     font-size: 18px;
     margin: 0 10px;
@@ -140,7 +133,6 @@ body {
     line-height: 80px;
     /*se sentro a la misma altura que el logo*/
     text-transform: uppercase;
-    left: 10px;
 }
 
 .nav-menu-link {

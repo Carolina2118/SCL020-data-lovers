@@ -7,3 +7,8 @@ export const recorregenero = (dataRecorrer, genero) => {
     })
 };
 // filtrar especie.
+export const recorreespecie = (dataRecorrer, especie) => {
+    return dataRecorrer.filter((e) => {
+        return e.species == especie
+    })
+};
