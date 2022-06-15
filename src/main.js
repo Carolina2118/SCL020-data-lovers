@@ -1,4 +1,4 @@
-import { recorregenero, recorreespecie } from './data.js';
+import { recorregenero, recorreespecie, datordenadoAZ, datordenadoZA } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 let rickDatos = data.results;
@@ -18,7 +18,6 @@ const mostrarPersonajes = (personajes) => {
             <div class="personaje">Personaje:${perName}</div>
             <div class ="genero">Genero:${geMaleFemal}</div>
             <div class ="especie">Specie:${espAlienHumano}</div>
-
             </div>
             `
     })
@@ -42,10 +41,10 @@ generoMaleFemal.addEventListener("change", function() {
     document.getElementById("root").innerHTML = ""
 
     let selecoption = generoMaleFemal.options[generoMaleFemal.selectedIndex].value;
-    let resturngener = recorregenero(rickDatos, selecoption);
+    let returngener = recorregenero(rickDatos, selecoption);
 
-    mostrarPersonajes(resturngener);
-    console.log(resturngener);
+    mostrarPersonajes(returngener);
+    console.log(returngener);
 
 });
 /*****************--- el evento del change en species ---*********************/
@@ -55,7 +54,27 @@ speAlienHumano.addEventListener("change", function() {
     document.getElementById("root").innerHTML = ""
 
     let seleccion = speAlienHumano.options[speAlienHumano.selectedIndex].value;
-    let resturnspecie = recorreespecie(rickDatos, seleccion);
-    mostrarPersonajes(resturnspecie);
-    console.log(resturnspecie);
+    let returnspecie = recorreespecie(rickDatos, seleccion);
+
+    mostrarPersonajes(returnspecie);
+    console.log(returnspecie);
 });
+const ordenarAoZ = document.getElementById("orden");
+
+ordenarAoZ.addEventListener("change", function() {
+    document.getElementById("root").innerHTML = "" //limpiar 
+    let selec = ordenarAoZ.options[ordenarAoZ.selectedIndex].value;
+    //console.log(selec)
+    if (selec == "a-z") {
+        let returnOrden = datordenadoAZ(rickDatos);
+        mostrarPersonajes(returnOrden);
+
+    }
+    if (selec == "z-a") {
+
+        let returnZA = datordenadoZA(rickDatos);
+        mostrarPersonajes(returnZA);
+    }
+    console.log(returnOrden);
+
+})

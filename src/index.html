@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--viewpor= ventana de visualisacion //// width= device-width,sigue el ancho de la pagina en un dispocitivo -->
     <script src="https://kit.fontawesome.com/e723dcbc95.js" crossorigin="anonymous"></script>
-    </body>
+
 </head>
 
 <body>
@@ -21,6 +21,7 @@
         <!--Menu del navegador-->
         <nav class="nav" id="filtrer">
             <a href="#" class="logo nav-link">logo</a>
+
             <button class="nav-buton" id="nav-buton">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -30,33 +31,29 @@
                 <li class="nav-menu-item" id="personajes">
                     <a href="#" class="nav">Personajes</a></li>
 
-
-                <select class=" nav-menu-item" id="genero">
+                <li class="nav-menu-item">
+                    <select class=" nav-menu-item" id="genero">
                         <option  selected>Genero</option>
                         <option class="hombre"  value="Male">Hombre</option> 
                         <option  class="mujer" value="Female">Mujer</option> 
                     </select>
-
-
-                <select class="nav-menu-item" id="especie">
+                </li>
+                <li class="nav-menu-item">
+                    <select class="nav-menu-item" id="especie">
                     <option  selected>Especie</option>
                     <option class="Humanoid" value="Humanoid">Humanoide</option>
                     <option class="Human" value="Human">Humano</option> 
                     <option class="Alien" value="Alien">Alien</option> 
                     
                 </select>
-
-                <select class="nav-menu-item" id="episodio">
-                    <option class="nav-menu-link nav-link">Episodio</option>
-                </select>
-
-                <div class="buscador" id="buscardo">
-                    <input type="text" placeholder="Buscador" required>
-
-                    <div class="btn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-
+                </li>
+                <li class="nav-menu-item">
+                    <select class=" nav-menu-item" id="orden">
+                        <option  selected>Ordena</option>
+                        <option class="a-z"  value="a-z">A-Z</option> 
+                        <option  class="Z-A" value="z-a">Z-A</option> 
+                    </select>
+                </li>
                 </div>
 
             </ul>
@@ -67,7 +64,7 @@
         anarquismo narrativo que exige esta época moderna.</main>
     -->
 
-    <!-- <script defer src="butoon.js"></script>-->
+    <script defer src="butoon.js"></script>
     <script src="main.js" type="module"></script>
 </body>
 
