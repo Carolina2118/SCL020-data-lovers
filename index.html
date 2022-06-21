@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style.css" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--viewpor= ventana de visualisacion //// width= device-width,sigue el ancho de la pagina en un dispocitivo -->
+    <script src="https://kit.fontawesome.com/e723dcbc95.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="root" id="root">
+        <img class="imagPortada" src="segundaPagina.png" alt="">
+    </div>
+    <header class="header" id="head">
+
+        <!--<h1>cabezado</h1>-->
+        <!--Menu del navegador-->
+        <nav class="nav" id="filtrer">
+
+            <button class="nav-buton" id="nav-buton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+
+                <li class="nav-menu-item" id="personajes">
+                    <a href="#" class="nav-menu-item">Personajes</a>
+                </li>
+
+                <li class="nav-menu-item">
+                    <select class=" nav-menu-item" id="genero">
+                        <option  selected>Genero</option>
+                        <option class="hombre"  value="Male">Hombre</option> 
+                        <option  class="mujer" value="Female">Mujer</option> 
+                    </select>
+                </li>
+                <li class="nav-menu-item">
+                    <select class="nav-menu-item" id="especie">
+                    <option  selected>Especie</option>
+                    <option class="Humanoid" value="Humanoid">Humanoide</option>
+                    <option class="Human" value="Human">Humano</option> 
+                    <option class="Alien" value="Alien">Alien</option> 
+                    
+                </select>
+                </li>
+                <li class="nav-menu-item">
+                    <select class=" nav-menu-item" id="orden">
+                        <option  selected>Ordena</option>
+                        <option class="a-z"  value="a-z">A-Z</option> 
+                        <option  class="z-a" value="z-a">Z-A</option> 
+                    </select>
+                </li>
+                </div>
+
+            </ul>
+        </nav>
+
+    </header>
+    <!-- <main class=" main"> "Rick y Morty" es el ejemplo más claro y es de los trabajos más reconocidos por abordar temas cotidianos y existencialistas con niveles de burla superiores a los de cualquier otra obra. Hemos mencionado que es la serie que mejor ha lidiado con el
+        anarquismo narrativo que exige esta época moderna.</main>
+    -->
+
+    <script defer src="butoon.js"></script>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.root {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /*los elementos se ponen en columna o fila cubriendo en 100% sino bajan*/
+}
+
+.container {
+    width: 360px;
+    height: 250px;
+    background: #e0f0d87b;
+    padding: 10px;
+    border: 10px solid rgb(6, 35, 23);
+    border-radius: 10%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    /*forman los elementos a lado */
+    justify-content: row;
+    /*acomoda los elementos */
+}
+
+.elemento {
+    color: rgb(11, 32, 5);
+    /*letra color*/
+    margin: 5px;
+    /*margen*/
+    width: 155px;
+    /*ancho de cajas dentro del contenedor*/
+    height: 100px;
+    /*alto de la caja*/
+    text-align: center;
+}
+
+.imagen {
+    /*imagen de la data */
+    width: 162px;
+    margin-top: 23px;
+    border-radius: 65px 8px;
+    border: #0a2414 solid;
+}
+
+.logo {
+    width: 140px;
+}
+
+body {
+    height: 1000px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 299px 28px;
+    display: flex;
+    background: linear-gradient(90deg, rgba(65, 58, 180, 1) 5%, rgba(29, 253, 200, 1) 50%, rgba(252, 208, 69, 1) 97%);
+}
+
+.header {
+    background-color: rgba(86, 248, 5, 0);
+    height: 92px;
+    /**/
+    position: fixed;
+    /*fijo posicion de la barra*/
+    width: 64%;
+    /**/
+    /*ancho 100 %*/
+    top: 116px;
+    left: 371px;
+}
+
+.imagPortada {
+    width: 100%;
+    margin: auto;
+    padding-left: 433px;
+    display: block;
+}
+
+.nav-buton {
+    color: rgb(20, 63, 21);
+    /*no color */
+    border: none;
+    /*elimino el borde*/
+    font-size: 50px;
+    /*tamaño a las barras*/
+    padding: 0 20px;
+    line-height: 70px;
+    /*en modo navegador cambia de tamaño*/
+    display: none;
+    /* para que no se vea en dispositivo escritoro*/
+    cursor: pointer;
+    padding-top: 27px;
+    background: #f7faf800;
+}
+
+.nav-menu {
+    /*se ajustan los nav en linea */
+    display: flex;
+    margin-right: 400px;
+    list-style: none;
+    margin-left: 93px;
+    margin: auto;
+}
+
+.nav-menu-item {
+    display: flex;
+    color: rgb(225, 21, 3);
+    background: #3bab6000;
+    border-color: rgba(9, 255, 0, 0);
+    /*se separan  cada navegador*/
+    font-size: 40px;
+    margin: 10px;
+    /*se separan */
+    line-height: 80px;
+    /*se centro a la misma altura que el logo*/
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-menu-link {
+    /*se ajusto los  bordes y el percusor */
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+    /* background-color: aquamarine */
+    background-color: #4c4c4c7c;
+    transition: 0.3s;
+}
+
+
+/*se modifica diceño dispocitivo movil*/
+
+@media (max-width:475px)
+/*si el dispositivo tenga menos de -- se le aplica */
+
+{
+    body {
+        height: 1000px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 299px 28px;
+        display: flex;
+        background: linear-gradient(90deg, rgba(65, 58, 180, 1) 5%, rgba(29, 253, 200, 1) 50%, rgba(252, 208, 69, 1) 97%);
+    }
+    .header {
+        top: 0px;
+        left: 0px;
+    }
+    .nav-menu {
+        display: flex;
+        background-size: 100% 100%;
+        flex-direction: column;
+        align-items: center;
+        /*centrando letras del navegador */
+        margin-right: 153px;
+        position: fixed;
+        /*posiciona segun el movimiento de la ventana */
+        left: 0;
+        top: 60px;
+        flex-basis: 150px;
+        /*sera el tope del elemneto del navegador*/
+        /*ancho de la barra */
+        padding: 329px 0;
+        /*toma todo el espacio */
+        overflow-y: auto;
+        left: 100%;
+        /*se muestra el navegador */
+        transition: right 0.3s;
+    }
+    .nav-menu-item {
+        text-decoration: none;
+        font-size: 200%;
+        line-height: 70px;
+        text-align: center;
+    }
+    .nav-menu-link {
+        /*se ajusto los  bordes y el percusor */
+        padding: 8px 12px;
+        border-radius: 4px;
+    }
+    .nav-menu-link:hover {
+        background: none;
+        color: rgba(18, 56, 90, 0);
+    }
+    .nav-buton {
+        display: block;
+        font-size: 62px;
+    }
+    .nav-menu_visible {
+        left: 0;
+    }
+}
