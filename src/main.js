@@ -18,7 +18,7 @@ const mostrarPersonajes = (personajes) => {
            <img class ="imagen" src ="${imagen}">
            </div>
               <div class="elemento elem2"> 
-              <img class="logo" src="Rick-and-Morty.png">         
+              <img class="logo"src="Rick-and-Morty.png">         
 
             
                     <div class="personaje">Personaje:${perName}</div>
@@ -37,7 +37,7 @@ const mostrarPersonajes = (personajes) => {
 
 const personajesName = document.getElementById("personajes");
 personajesName.addEventListener("click", function() {
-    document.getElementById("root").innerHTML = ""
+    document.getElementById("root").innerHTML = "" //limpiar "devuelve la propiedad"
 
     mostrarPersonajes(rickDatos);
 });
@@ -47,7 +47,7 @@ personajesName.addEventListener("click", function() {
 const generoMaleFemal = document.getElementById("genero");
 
 generoMaleFemal.addEventListener("change", function() {
-    document.getElementById("root").innerHTML = ""
+    document.getElementById("root").innerHTML = "" //limpiar
 
     let selecoption = generoMaleFemal.options[generoMaleFemal.selectedIndex].value;
     let returngener = recorregenero(rickDatos, selecoption);

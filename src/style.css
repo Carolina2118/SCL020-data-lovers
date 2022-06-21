@@ -60,13 +60,22 @@ body {
 
 .header {
     background-color: rgba(86, 248, 5, 0);
-    height: 140px;
+    height: 92px;
+    /**/
     position: fixed;
     /*fijo posicion de la barra*/
-    width: 100%;
+    width: 64%;
+    /**/
     /*ancho 100 %*/
-    top: 0;
-    left: 0;
+    top: 116px;
+    left: 371px;
+}
+
+.imagPortada {
+    width: 100%;
+    margin: auto;
+    padding-left: 433px;
+    display: block;
 }
 
 .nav-buton {
@@ -91,7 +100,8 @@ body {
     display: flex;
     margin-right: 400px;
     list-style: none;
-    margin-left: 435px;
+    margin-left: 93px;
+    margin: auto;
 }
 
 .nav-menu-item {
@@ -124,7 +134,7 @@ body {
 
 /*se modifica diceño dispocitivo movil*/
 
-@media (max-width:768px)
+@media (max-width:475px)
 /*si el dispositivo tenga menos de -- se le aplica */
 
 {
@@ -134,19 +144,18 @@ body {
         padding: 299px 28px;
         display: flex;
         background: linear-gradient(90deg, rgba(65, 58, 180, 1) 5%, rgba(29, 253, 200, 1) 50%, rgba(252, 208, 69, 1) 97%);
-        background-image: url(segundaPagina.png);
-        background-repeat: no-repeat;
-        width: 162px;
-        margin-top: 23px;
+    }
+    .header {
+        top: 0px;
+        left: 0px;
     }
     .nav-menu {
         display: flex;
         background-size: 100% 100%;
-        /*se ajustan los nav en linea */
         flex-direction: column;
         align-items: center;
         /*centrando letras del navegador */
-        margin-right: 20px;
+        margin-right: 153px;
         position: fixed;
         /*posiciona segun el movimiento de la ventana */
         left: 0;
@@ -154,26 +163,27 @@ body {
         flex-basis: 150px;
         /*sera el tope del elemneto del navegador*/
         /*ancho de la barra */
-        padding: 20px 0;
+        padding: 329px 0;
         /*toma todo el espacio */
         overflow-y: auto;
         left: 100%;
-        /*se corre a la derecha */
-        transition: left 0.3s;
+        /*se muestra el navegador */
+        transition: right 0.3s;
     }
     .nav-menu-item {
         text-decoration: none;
         font-size: 200%;
         line-height: 70px;
+        text-align: center;
     }
     .nav-menu-link {
         /*se ajusto los  bordes y el percusor */
         padding: 8px 12px;
-        border-radius: 3px;
+        border-radius: 4px;
     }
     .nav-menu-link:hover {
         background: none;
-        color: rgba(240, 248, 255, 0);
+        color: rgba(18, 56, 90, 0);
     }
     .nav-buton {
         display: block;
