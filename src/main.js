@@ -13,15 +13,24 @@ const mostrarPersonajes = (personajes) => {
         let espAlienHumano = e.species
         let imagen = e.image
         document.getElementById("root").innerHTML += `
-        <div class ="container">
-            <img class ="imagen" src ="${imagen}">
-            <div class="personaje">Personaje:${perName}</div>
-            <div class ="genero">Genero:${geMaleFemal}</div>
-            <div class ="especie">Specie:${espAlienHumano}</div>
-            </div>
-            `
+          <div class ="container">                      
+           <div class ="elemento elem1">     
+           <img class ="imagen" src ="${imagen}">
+           </div>
+              <div class="elemento elem2"> 
+              <img class="logo" src="Rick-and-Morty.png">         
+
+            
+                    <div class="personaje">Personaje:${perName}</div>
+                    <div class ="genero">Genero:${geMaleFemal}</div>
+                    <div class ="especie">Specie:${espAlienHumano}</div>
+             </div>
+
+          </div>
+         `
     })
 }
+
 
 /*la funciond el click en personaje*/
 /****** funciona! *****/

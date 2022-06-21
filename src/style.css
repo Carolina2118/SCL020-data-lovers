@@ -1,65 +1,66 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.container {
-    background: rgba(74, 165, 9, 0.387);
-    /*color al fondo*/
+.root {
     display: flex;
-    /*orden de los elementos*/
-    align-content: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    /*los elementos se ponen en columna o fila cubriendo en 100% sino bajan*/
 }
 
-.personaje {
-    background: #777;
-    height: 40px;
-    color: rgb(36, 7, 202);
-    padding: 70px 30px;
+.container {
+    width: 360px;
+    height: 250px;
+    background: #e0f0d87b;
+    padding: 10px;
+    border: 10px solid rgb(6, 35, 23);
+    border-radius: 10%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    /*forman los elementos a lado */
+    justify-content: row;
+    /*acomoda los elementos */
+}
+
+.elemento {
+    color: rgb(11, 32, 5);
+    /*letra color*/
+    margin: 5px;
+    /*margen*/
+    width: 155px;
+    /*ancho de cajas dentro del contenedor*/
+    height: 100px;
+    /*alto de la caja*/
+    text-align: center;
+}
+
+.imagen {
+    /*imagen de la data */
+    width: 162px;
+    margin-top: 23px;
+    border-radius: 65px 8px;
+    border: #0a2414 solid;
+}
+
+.logo {
+    width: 140px;
 }
 
 body {
-    background-image: url(mortyAtacado.jpg);
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    background-position: center center;
     height: 1000px;
-    background-attachment: fixed;
-    background-size: 100% 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 90px 20px 0;
+    padding: 299px 28px;
     display: flex;
-}
-
-.buscador {
-    position: relative;
-    margin-top: 29px;
-}
-
-.buscador input {
-    padding: 0 15px;
-    font-size: 18px;
-    color: #000000;
-    outline: none;
-    border: 1px solid rgba(76, 127, 83, 0.911);
-    border-radius: 10px;
-    background-color: #7c8876af;
-}
-
-.btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 25px;
-    text-align: center;
-    color: rgb(6, 6, 6);
+    background: linear-gradient(90deg, rgba(65, 58, 180, 1) 5%, rgba(29, 253, 200, 1) 50%, rgba(252, 208, 69, 1) 97%);
 }
 
 .header {
-    background-color: rgba(108, 211, 132, 0.459);
-    height: 80px;
+    background-color: rgba(86, 248, 5, 0);
+    height: 140px;
     position: fixed;
     /*fijo posicion de la barra*/
     width: 100%;
@@ -68,46 +69,21 @@ body {
     left: 0;
 }
 
-
-/*barra de navegacion*/
-
-.nav {
-    display: flex;
-    color: #000000;
-    text-decoration: none;
-    justify-content: space-between;
-    /*los navegadores quedan alejados del logo*/
-    max-width: 1000px;
-    /*para navegador es grande ,el logo se acomode */
-    margin: o auto;
-    /* para centrar ,arriba y abajo o y izquierda y derecha  */
-}
-
-.logo {
-    /* se trabaja el logo se acomoda
-    para que quede sentrado */
-    color: rgb(13, 19, 13);
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 40px;
-    line-height: 80px;
-}
-
 .nav-buton {
-    color: rgb(16, 69, 17);
-    background: none;
+    color: rgb(20, 63, 21);
     /*no color */
     border: none;
     /*elimino el borde*/
-    font-size: 30px;
+    font-size: 50px;
     /*tamaño a las barras*/
     padding: 0 20px;
-    line-height: 60px;
+    line-height: 70px;
     /*en modo navegador cambia de tamaño*/
     display: none;
     /* para que no se vea en dispositivo escritoro*/
     cursor: pointer;
+    padding-top: 27px;
+    background: #f7faf800;
 }
 
 .nav-menu {
@@ -115,18 +91,22 @@ body {
     display: flex;
     margin-right: 400px;
     list-style: none;
+    margin-left: 435px;
 }
 
 .nav-menu-item {
-    background: #236e3c00;
+    display: flex;
+    color: rgb(225, 21, 3);
+    background: #3bab6000;
     border-color: rgba(9, 255, 0, 0);
     /*se separan  cada navegador*/
-    font-size: 18px;
-    margin: 0 10px;
+    font-size: 40px;
+    margin: 10px;
     /*se separan */
     line-height: 80px;
-    /*se sentro a la misma altura que el logo*/
+    /*se centro a la misma altura que el logo*/
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .nav-menu-link {
@@ -138,7 +118,7 @@ body {
 .nav-menu-link:hover {
     /* background-color: aquamarine */
     background-color: #4c4c4c7c;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 
@@ -149,39 +129,32 @@ body {
 
 {
     body {
-        background-color: blueviolet;
-        padding-top: 0 70px;
-        background-position: center center;
-        background-size: 100% 100%;
-    }
-    .header {
-        /*modifica en ancho del navegador*/
-        height: 60px;
-    }
-    .logo {
-        /* se trabaja el logo se acomoda
-        para que quede sentrado */
-        font-size: 25px;
-        font-weight: bold;
-        padding: 0 20px;
-        line-height: 60px;
+        height: 1000px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 299px 28px;
+        display: flex;
+        background: linear-gradient(90deg, rgba(65, 58, 180, 1) 5%, rgba(29, 253, 200, 1) 50%, rgba(252, 208, 69, 1) 97%);
+        background-image: url(segundaPagina.png);
+        background-repeat: no-repeat;
+        width: 162px;
+        margin-top: 23px;
     }
     .nav-menu {
+        display: flex;
+        background-size: 100% 100%;
         /*se ajustan los nav en linea */
         flex-direction: column;
         align-items: center;
         /*centrando letras del navegador */
         margin-right: 20px;
-        background-color: #156530;
         position: fixed;
         /*posiciona segun el movimiento de la ventana */
         left: 0;
         top: 60px;
+        flex-basis: 150px;
         /*sera el tope del elemneto del navegador*/
-        width: 100%;
         /*ancho de la barra */
         padding: 20px 0;
-        height: calc(100% - 60px);
         /*toma todo el espacio */
         overflow-y: auto;
         left: 100%;
@@ -189,6 +162,8 @@ body {
         transition: left 0.3s;
     }
     .nav-menu-item {
+        text-decoration: none;
+        font-size: 200%;
         line-height: 70px;
     }
     .nav-menu-link {
@@ -197,23 +172,14 @@ body {
         border-radius: 3px;
     }
     .nav-menu-link:hover {
-        /* background-color: aquamarine */
         background: none;
-        color: aliceblue;
+        color: rgba(240, 248, 255, 0);
     }
     .nav-buton {
         display: block;
+        font-size: 62px;
     }
     .nav-menu_visible {
         left: 0;
-    }
-    .buscardor {
-        position: absolute;
-        padding: 5px;
-    }
-    .buscardor input {
-        margin-top: 29px;
-        width: 240px;
-        padding: 40px;
     }
 }
